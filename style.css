@@ -1,0 +1,268 @@
+.padre {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    width: auto;
+}
+a{
+    text-decoration: none;
+}
+.header {
+    background: url(img/ba1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+}
+    .header a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .menu{
+    background: #343434;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    }
+        .logo{
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+        }
+            .logo img{
+            width: 20%;
+            }
+        .nav{
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: end;
+        padding-right: 40px;
+        }
+            .nav .blanco{
+            color: #fff;
+            padding: 0 10px;
+            letter-spacing: 2px;
+            }
+            .nav .gris {
+            color: #7c7c7c;
+            padding: 0 10px;
+            letter-spacing: 2px;
+            }
+            .nav .verde{
+            color: rgb(0, 175, 0);
+            padding: 0 10px;
+            letter-spacing: 2px;
+            }
+
+        .contenido{
+        display: inline-flex;
+        background: rgba(0, 0, 0, 0.548);
+        height: 500px;
+        flex: 1 1 auto;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        text-align: end;
+        padding-right: 40px;
+        }
+            .contenido h1{
+            color: #fff;
+            display: flex;
+            justify-content: end;
+            }
+            .contenido p{
+            color: #fff;
+            display: flex;
+            align-content: end;
+            width: 50%;
+            }
+            .botones{
+                display: flex;
+                align-items: center;
+            }
+            .button{
+                cursor: pointer;
+                    border: 1px solid #fefefe;
+                    background-color: transparent;
+                    height: 36px;
+                    width: 140px;
+                    border-radius: 5px;
+                    color: #fff;
+                    font-size: auto;
+            }
+            .button:hover{
+                background: rgba(0, 0, 0, .5);
+                    border-radius: 5px;
+                    border-color: #fff;
+                    border-width: 1px;
+            }
+.oradores{
+display: inline-block;
+text-align: center;
+padding: 0;
+margin-top: 15px;
+margin-bottom: 0;
+padding-bottom: 40px
+}
+    .oradores p{
+        padding-top: 20px;
+        text-align: center;
+    }
+
+.tarjetas{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex: 1 1 auto;
+}
+    .tarjetas .card-head{
+        text-align: start;
+    }
+    .tarjetas .card-title{
+        padding-top: 15px;
+    }
+
+.informacion{
+    display: flex;
+    border-color: 20px solid rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    flex: auto;
+}
+    .foto{
+        flex: 1;
+
+    }
+    img{
+    max-width: 100%;
+    height: auto;
+    }
+
+
+.info{
+    background: #343434;
+    color: #fff;
+    flex: 1;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.info a{
+    background: rgba(0, 0, 0, .1);
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border-radius: 5px;
+    border-color: #fff;
+    border-width: 1px;
+}
+    .info a:hover{
+    background: rgba(0,0,0,.5);
+    border-radius: 5px;
+    border-color: #fff;
+    border-width: 1px;
+    }
+
+.formulario{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .textarea {
+    height: 100%;
+    width: 100%;
+    
+    }
+    .mensaje p{
+    text-align: left;
+    margin-left: 300px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 10px;
+    color: gray;
+    }
+    .btn-success {
+        background-color: var(--colorbtn);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.pie{
+    background: rgb(4, 39, 79);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
+    .pie a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .pie a:hover{
+        color: #7c7c7c;
+    }
+
+.nav-btn{
+    cursor: pointer;
+    background-color: transparent;
+    height: 36px;
+    width: 140px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: auto;
+    display: none;
+}
+
+@media (max-width: 1350px){
+    .oradores{
+        flex-direction: column;
+    }
+    .tarjetas{
+        flex-direction: column;
+    }
+    .mensaje p{
+        margin-left: 26%;
+    }
+}
+
+@media (max-width: 918px){
+    .informacion{
+        flex-direction: column;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 886px){
+    .menu{
+        height: auto;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+    .nav-btn{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+    .ancla{
+        flex-direction: column;
+    }
+}
