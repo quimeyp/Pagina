@@ -1,0 +1,168 @@
+.padre {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    width: auto;
+}
+a{
+    text-decoration: none;
+}
+.header {
+    background: url(img/ba1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.menu {
+    background: #343434;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+}
+        .logo {
+            padding-left: 40px;
+            display: flex;
+            align-items: center;
+        }
+.nav {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: end;
+    padding-right: 40px;
+}
+
+.nav .blanco {
+    color: #fff;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav .gris {
+    color: #7c7c7c;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav .verde {
+    color: rgb(0, 175, 0);
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card-bodyE{
+    padding: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: blue;
+}
+
+.card-bodyT {
+    padding: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: green;
+}
+
+.card-bodyJ {
+    padding: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: yellow;
+}
+
+.mensaje{
+    font-size: 13px;
+    color: gray;
+}
+
+.formulario {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    row-gap: 10px;
+    align-items: stretch;
+}
+
+.pF {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;   
+}
+.sF {
+    display: grid;
+    grid-template-columns: 100%;
+    
+}
+
+.tF {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    }
+
+
+.cF {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.botones {
+    display: inline-block;
+    width: 62%;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+    .btn {
+        margin: auto;
+        
+    }
+.pie {
+    background: rgb(4, 39, 79);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
+
+.pie a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.pie a:hover {
+    color: #7c7c7c;
+}

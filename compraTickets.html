@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tickets.css">
+    <title>Compra de tickets</title>
+</head>
+<body>
+    <nav class="padre">
+    <header class="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Conf Bs As</a>
+            </div>
+            <nav class="nav">
+                <a href="#" class="blanco desaparece ancla">La conferencia</a>
+                <a href="#" class="gris desaparece ancla">Los oradores</a>
+                <a href="#" class="gris desaparece ancla">El lugar y la fecha</a>
+                <a href="#" class="gris desaparece ancla">Conviértete en orador</a>
+                <a href="#" class="verde desaparece ancla" id="abrirCompra">Comprar tickets</a>
+            </nav>
+        </div>
+    </header>
+    <div class="contenido">
+        <div class="tarjetas">
+                <div class="card text-center" id="card" style="width: 18rem;">
+                    <div class="card-bodyE" id="Estudiante">
+                        <h5 class="card-title">Estudiante</h5>
+                        <p class="card-text">Tiene un descuento</p>
+                        <p><b>80%</b></p>
+                        <p class="mensaje">*presentar documentación</p>
+                    </div>
+                </div>
+                
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-bodyT" id="Trainee">
+                        <h5 class="card-title">Trainee</h5>
+                        <p class="card-text">Tiene un descuento</p>
+                        <p><b>50%</b></p>
+                        <p class="mensaje">*presentar documentación</p>
+                    </div>
+                </div>
+                
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-bodyJ" id="Junior">
+                        <h5 class="card-title">Junior</h5>
+                        <p class="card-text">Tiene un descuento</p>
+                        <p><b>15%</b></p>
+                        <p class="mensaje">*presentar documentación</p>
+                    </div>
+                </div>
+        </div>
+        <div class="formulario">
+            <p>venta</p>
+            <h2>VALOR DE TICKET $200</h2>
+            <form>
+                <div class="pF">
+                    <div>
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <input type="text" name="Apellido" id="Apellido" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="sF">
+                    <input type="email" name="Correo" id="Correo" placeholder="Correo">
+                </div>
+                <div class="tF">
+                    <label for="">Cantidad</label>
+                    <label for="">Categoria</label>
+                    <input type="number" name="cantidad" id="cantidad">
+                    <select name="categoria" id="categoria">
+                        <option value="op1">Estudiante</option>
+                        <option value="op2">Trainee</option>
+                        <option value="op3">Junior</option>
+                    </select>
+                </div>
+                <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+                    Total a Pagar: $
+                </div>
+                <div class="cF">
+                <button type="button" class="btn btn-success">Borrar</button>
+                <button type="button" class="btn btn-success">Resumen</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="pie">
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Contáctanos</a>
+        <a href="#">Prensa</a>
+        <a href="#">Conferencias</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Estudiantes</a>
+    </div>
+    </nav>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -226,6 +226,8 @@ padding-bottom: 40px
     display: none;
 }
 
+
+
 @media (max-width: 1350px){
     .oradores{
         flex-direction: column;
